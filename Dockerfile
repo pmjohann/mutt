@@ -1,5 +1,5 @@
 FROM alpine:3.12
-RUN apk add --no-cache mutt && \
+RUN apk add --no-cache mutt links && \
     adduser -D mutt && \
     touch /muttrc && \
     ln -s /muttrc /home/mutt/.muttrc && \
